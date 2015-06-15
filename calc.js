@@ -34,16 +34,19 @@ function calc(bid, qual, form){
 				var f = form[keys],
 					r;
 
+				// Super Secret Formula
 				r = b * q * f;
 
-				console.log('=======');
-				console.log("Bid: "+b);
-				console.log("Quality: "+q);
-				console.log("Rank: "+r);
-				console.log("Format: "+f);
-				console.log('=======');
+				if(r === 15 || r === 20 || r === 8 || r === 5){
+					console.log('=======');
+					console.log("Bid: "+b);
+					console.log("Quality: "+q);
+					console.log("Rank: "+r);
+					console.log("Format: "+f);
+					console.log('=======');
 
-				data.push([b,q,f,r]);
+					data.push([b,q,f,r]);
+				}
 			});
 
 		});
